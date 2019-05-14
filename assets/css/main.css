@@ -295,7 +295,7 @@ html, body {
 
 /* Box */
 
-	.thumbnails {
+	.caixas {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -314,7 +314,7 @@ html, body {
 		flex-wrap: wrap;
 	}
 
-		.thumbnails .box {
+		.caixas .box {
 			margin: 0 1em 2em 1em;
 			width: 30%;
 			border: rgb(131, 131, 131) solid 2px;
@@ -322,7 +322,7 @@ html, body {
 
 			@media screen and (max-width: 1280px) {
 
-				.thumbnails .box {
+				.caixas .box {
 					width: 45%;
 				}
 
@@ -330,7 +330,7 @@ html, body {
 
 			@media screen and (max-width: 736px) {
 
-				.thumbnails .box {
+				.caixas .box {
 					width: 100%;
 				}
 
@@ -1334,12 +1334,18 @@ html, body {
 		padding: 4em 0 2em 0;
 		min-height: 100vh;
 		background-image: url("https://images.unsplash.com/photo-1465355459425-bbe1622d5a52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 		opacity: 0.85;
 	}
 	#midsection {
 		padding: 4em 0 2em 0;
 		min-height: 100vh;
 		background-image: url("https://images.unsplash.com/photo-1530982011887-3cc11cc85693?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 		opacity: 0.85;
 	}
 
