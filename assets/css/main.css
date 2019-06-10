@@ -1607,3 +1607,8 @@ body{
 .xyz:hover{
 	text-decoration: none;
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 769px) {
+	#hidecube { display: none; }  /* show it on small screens */
+  }
