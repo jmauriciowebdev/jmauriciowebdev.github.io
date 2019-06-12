@@ -1,0 +1,83 @@
+body{
+    min-height: 100vh;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadada;
+}
+
+.container{
+    min-width: 70vh;
+    display: block;
+}
+
+.one{
+    background: #585B76;
+    margin-right: 3rem;
+}
+.two{
+    background: #3ECE81;
+    margin-right: 3rem;
+}
+.three{
+    background: #F64FB8;
+    margin-right: 3rem;
+}
+.four{
+    background: #40C3D1;
+    margin-right: 3rem;
+}
+.five{
+    background: #84AB40;
+    margin-right: 3rem;
+}
+
+.options{
+    min-width: 30vh;
+    display: block;
+}
+
+.header{
+    display:flex;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.generated{
+    display:flex;
+    min-width: 30px;
+    min-height: 30px;
+    border: solid 1px rgb(119, 118, 118);
+    margin-bottom: .5rem;
+}
+.generatedtxt{
+    display:flex;
+    min-width: 30px;
+    min-height: 30px;
+    border: solid 1px rgb(119, 118, 118);
+    margin-bottom: .5rem;
+}
+
+
+#dive{
+    background-color: #dbff57;
+    padding: 1rem 3rem;
+    border-radius: 7px;
+    margin: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn{
+    text-transform: capitalize;
+    background-color: rgba(0,0,0,.6);
+    color: #fefefe;
+    border: none;
+    padding: 0.25rem 0.6rem;
+}
+
+#btn:hover{
+    background-color: rgb(0,0,0);
+}
