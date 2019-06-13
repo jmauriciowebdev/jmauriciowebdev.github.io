@@ -1,60 +1,84 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/creativelab.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="header">
-            <h1 class="display-4">Need help picking just the right colors for your new design?</h1>
-            <h3>Generate random colors and add them to the display boxes by clicking on them.</h3>
-        </div>
-        <div class="container">
-            <div id="dive">
-                <button id="btn">Click me</button>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="assets/css/jsapp.css">
+<title>jM - CreativeLab</title>
+</head>
+<body>
+    <nav class="nav navbar-dark bg-dark">
+        <a class="navbar-brand ml-4" href="index.html">jM - Creative Lab</a>
+    </nav>
+    <div class="container">
+        <div class="row">
+          <div class="col-3 leftmenu justify-content-around align-items-center mestra">
+            <p class="display-4 remover">Find the right colors for your next project.</p>
+            <p class="rawr">Use the left button to generate a random color, or the right one to pick one.</p>
+          </div>
+          <div class="col-6 centerscreen">
+            <div class="buttonwrapper d-flex justify-content-around align-items-center" id="master">
+                <button class="btn btn-light" id="generatehex"><i class="fas fa-random"></i> <span id="btnOne"> Generate Random Color</span></button>
+                <button class="jscolor {valueElement:'valueInput', styleElement:'master'} btn btn-light" id="pickhex"><i class="fas fa-eye-dropper"></i><span id="btnTwo"> Color Picker</span></button>
+            </div>
+            <div id="currentvalue" class="mt-1">
+                Current Value: <input id="valueInput" value="004E79" size="5">
+            </div>
+          </div>
+          <div class="col-3 resultscreen d-flex align-content-around flex-wrap">
+            <div class="row">
+                <div class="col-7 colorsaver one">
+                    
                 </div>
+                <div class="col-5 colorsavertext d-flex justify-content-around align-items-center">
+                    #585B76
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7 colorsaver two">
+                    
+                </div>
+                <div class="col-5 colorsavertext d-flex justify-content-around align-items-center">
+                    #3ECE81
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7 colorsaver three">
+                    
+                </div>
+                <div class="col-5 colorsavertext d-flex justify-content-around align-items-center">
+                    #F64FB8
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7 colorsaver four">
+                    
+                </div>
+                <div class="col-5 colorsavertext d-flex justify-content-around align-items-center">
+                    #40C3D1
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7 colorsaver five">
+                    
+                </div>
+                <div class="col-5 colorsavertext d-flex justify-content-around align-items-center">
+                    #84AB40
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="options">
-            <div id="gone" class="generated one">
-                
-            </div>
-            <div id="gtwo" class="generated two">
-
-            </div>
-            <div id="gthree" class="generated three">
-
-            </div>
-            <div id="gfour" class="generated four">
-
-            </div>
-            <div id="gfive" class="generated five">
-
-            </div>
-        </div>
-        <div class="optionstxt">
-            <div class="generatedtxt onetxt">
-                #585B76
-            </div>
-            <div class="generatedtxt twotxt">
-                #3ECE81
-            </div>
-            <div class="generatedtxt threetxt">
-                #F64FB8
-            </div>
-            <div class="generatedtxt fourtxt">
-                #40C3D1
-            </div>
-            <div class="generatedtxt fivetxt">
-                #84AB40
-            </div>
-        </div>
+      </div>
 
 
-        <script src="assets/js/creativelab.js"></script>
-    </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="assets/js/jsapp.js"></script>
+<script src="assets/js/jscolor.js"></script>
+</body>
 </html>

@@ -1158,10 +1158,6 @@ html, body {
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
 		min-height: 100vh;
-		background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
 		border-top: 0;
 		position: relative;
 		text-align: center;
@@ -1285,27 +1281,6 @@ html, body {
 
 
 
-		#banner:before {
-			-moz-transition: opacity 3s ease;
-			-webkit-transition: opacity 3s ease;
-			-ms-transition: opacity 3s ease;
-			transition: opacity 3s ease;
-			-moz-transition-delay: 1s;
-			-webkit-transition-delay: 1s;
-			-ms-transition-delay: 1s;
-			transition-delay: 1s;
-			content: '';
-			background-color: #42424f;
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0.45;
-			position: absolute;
-			top: 0;
-			width: 100%;
-			z-index: 1;
-		}
-
 
 
 		@media screen and (max-width: 980px) {
@@ -1338,7 +1313,6 @@ html, body {
 	#main {
 		padding: 4em 0 2em 0;
 		min-height: 100vh;
-		background-image: url("https://images.unsplash.com/photo-1465355459425-bbe1622d5a52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1347,7 +1321,6 @@ html, body {
 	#midsection {
 		padding: 4em 0 2em 0;
 		min-height: 100vh;
-		background-image: url("https://images.unsplash.com/photo-1530982011887-3cc11cc85693?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1439,6 +1412,11 @@ body {
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
+  background-color: #001029;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   
   &:hover {
    span {
@@ -1458,7 +1436,7 @@ span {
 
 .header{
     height: 100vh;
-    width: 100vh;
+	width: 100vh;
 }
 
 .examples{
@@ -1612,4 +1590,9 @@ body{
 
 @media screen and (min-width: 0px) and (max-width: 769px) {
 	#hidecube { display: none; }  /* show it on small screens */
+  }
+
+
+  .jumbotron{
+	  opacity: .7;
   }
