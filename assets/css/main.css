@@ -1316,7 +1316,6 @@ html, body {
 		display: flex;
 		align-items: center !important;
 		min-height: 100vh;
-		padding: 4em 0 2em 0;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
