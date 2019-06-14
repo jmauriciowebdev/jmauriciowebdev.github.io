@@ -1155,6 +1155,7 @@ html, body {
 	#banner {
 
 		display: flex;
+		align-items: center;
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
 		min-height: 100vh;
@@ -1174,7 +1175,7 @@ html, body {
 			color: #fff;
 			font-size: 5em;
 			font-weight: 400;
-			font-family: 'Passion One', cursive;
+			font-family: 'Encode Sans Expanded', sans-serif;
 			margin: 0;
 		}
 
@@ -1198,6 +1199,7 @@ html, body {
 			color: rgba(255, 255, 255, 0.85);
 			font-size: 1.5em;
 			font-weight: 300;
+			font-family: 'Encode Sans Expanded', sans-serif;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -1311,16 +1313,18 @@ html, body {
 /* Main */
 
 	#main {
-		padding: 4em 0 2em 0;
+		display: flex;
+		align-items: center !important;
 		min-height: 100vh;
+		padding: 4em 0 2em 0;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 		opacity: 0.85;
+		justify-content: space-evenly;
 	}
 	#midsection {
 		padding: 4em 0 2em 0;
-		min-height: 100vh;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1435,12 +1439,11 @@ span {
 }
 
 .header{
-    height: 100vh;
+    height: 50vh;
 	width: 100vh;
 }
 
 .examples{
-    height: 100vh;
     width: 100;
 }
 
@@ -1448,18 +1451,10 @@ span {
 body{
     margin:0;
     padding:0;
-    background-color: #282631 !important;
+	background-color: #03000f !important;
+	background-attachment: fixed;
     width: 100%;
 	justify-content: center;
-  }
-  .eye{
-    margin: auto;
-  /*   background:#ccc; */
-  }
-  .pupil{
-    position:relative;
-  /*   transform:  rotate(390deg); */
-  /*   transform-origin: 20px center; */
   }
 
   .examples{
@@ -1596,3 +1591,15 @@ body{
   .jumbotron{
 	  opacity: .7;
   }
+
+
+/* Regarding maps */
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+    background: grey;
+   }
+
+#map span{
+	display:none;
+}
