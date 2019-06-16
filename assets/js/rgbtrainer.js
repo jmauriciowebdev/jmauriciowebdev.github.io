@@ -1,10 +1,58 @@
-var colors = generateRandomColors(6);
+var numSquares = 6;
+var colors = generateRandomColors(numSquares);
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var result = document.getElementById("pickedColor");
 result.textContent = pickedColor;
 var message = document.getElementById("message");
 var h1 = document.querySelector("h1");
+var resetBtn = document.getElementById("resetBtn");
+var easyBtn = document.getElementById("easyBtn");
+var hardBtn = document.getElementById("hardBtn");
+
+
+
+easyBtn.addEventListener("click", function(){
+    numSquares = 3;
+    easyBtn.classList.add("selected");
+    hardBtn.classList.remove("selected");
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    result.textContent = pickedColor;
+    for (var i = 0; i < squares.length ; i ++){
+        if(colors[i]){
+            squares[i].style.backgroundColor = colors[i];
+        } else {
+            squares[i].style.display = "none";
+        }
+    }
+});
+hardBtn.addEventListener("click", function(){
+    numSquares = 6;
+    hardBtn.classList.add("selected");
+    easyBtn.classList.remove("selected");
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    result.textContent = pickedColor;
+    for (var i = 0; i < squares.length ; i ++){
+        if(colors[i]){
+            squares[i].style.backgroundColor = colors[i];
+            squares[i].style.display = "block";
+        }
+    }
+});
+
+
+resetBtn.addEventListener("click", function(){
+    resetBtn.textContent = "New Colors";
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    result.textContent = pickedColor;
+    for (var i = 0; i < squares.length; i++){
+        squares[i].style.backgroundColor = colors[i];
+    }
+    h1.style.backgroundColor = "#232323";
+})
 
 for (var i = 0; i < squares.length; i++){
     squares[i].style.backgroundColor = colors[i];
@@ -12,6 +60,7 @@ for (var i = 0; i < squares.length; i++){
         var clickedColor = this.style.backgroundColor;
         if (clickedColor === pickedColor){
             message.textContent = "Correct";
+            resetBtn.textContent = "Play Again?";
             h1.style.backgroundColor = pickedColor;
             for (var i = 0; i < squares.length; i++){
                 squares[i].style.backgroundColor = pickedColor;

@@ -32,6 +32,16 @@ h1{
     color: blue;
 }
 
-span{
+h2{
     color: white;
+}
+
+#stripe{
+    background: white;
+    height: 30px;
+    text-align: center;
+}
+
+.selected{
+    background: blue;
 }
