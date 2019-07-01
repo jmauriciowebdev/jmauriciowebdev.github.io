@@ -1,16 +1,16 @@
 function Snake() {
-    this.x = 10;
-    this.y = 10;
+    this.x = 150;
+    this.y = 150;
     this.xSpeed = scale * 1;
     this.ySpeed = 0;
     this.total = 0;
     this.tail = [];
+    this.highscore = 0;
   
     this.draw = function() {
       ctx.fillStyle = "green";
       for (let i=0; i<this.tail.length; i++) {
-        ctx.fillRect(this.tail[i].x,
-          this.tail[i].y, scale, scale);
+        ctx.fillRect(this.tail[i].x, this.tail[i].y, scale, scale);
       }
   
       ctx.fillRect(this.x, this.y, scale, scale);

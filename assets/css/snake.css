@@ -16,4 +16,18 @@ body {
 #score {
   color: #888888;
 }
+
+.arrows {
+  width: 2.5rem;
+  background-color: #888888;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: .3rem;
+  margin-top: .2rem;
+}
+
+.lighttext {
+  color: #888888;
+}
 /*# sourceMappingURL=snake.css.map */

@@ -16,7 +16,14 @@
             </nav>
     <div class="container">
         <canvas id="canvas" width="300" height="300"></canvas>
+        <div id="highscore" class="lighttext">Your Current High Score is: 0</div>
         <div id="score"></div>
+        <button id="up" class="arrows" onclick="snake.changeDirection('Up')">↑</button>
+        <button id="down" class="arrows" onclick="snake.changeDirection('Down')">↓</button>
+        <button id="left" class="arrows" onclick="snake.changeDirection('Left')">←</button>
+        <button id="right" class="arrows" onclick="snake.changeDirection('Right')">→</button>
+        <br>
+        <p class="lighttext">You can use the directional arrows or the buttons to play the game!</p>
     </div>
 
 
