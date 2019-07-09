@@ -6,8 +6,8 @@ class Cloud {
 	}
 
 	move() {
-		let cspeed = random(2);
-		this.x -= 2 - cspeed;
+		let cspeed = 2;
+		this.x -= cspeed;
 	}
 	show() {
 		image(cImg, this.x, this.y, this.r, this.r);

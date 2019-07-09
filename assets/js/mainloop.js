@@ -51,7 +51,8 @@ function keyPressed() {
 }
 
 function mousePressed() {
-	clouds.push(new Cloud());
+	player.jump();
+	gameStarted = true;
 }
 
 function draw() {
@@ -63,7 +64,7 @@ function draw() {
 				obstacles.push(new Obstacle());
 			}
 		}
-		if (random(1) < 0.001) {
+		if (random(1) < 0.005) {
 			clouds.push(new Cloud());
 		}
 
