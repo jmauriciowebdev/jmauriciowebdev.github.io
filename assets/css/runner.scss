@@ -8,6 +8,7 @@ body {
 }
 
 canvas {
+    display: block;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -16,4 +17,24 @@ canvas {
     height: 50%;
     padding: 20px;
     text-align: center;
+ }
+
+ .mobileonly{
+     display: none;
+ }
+
+ @media (max-width: 600px) {
+     canvas {
+         display: none;
+     }
+     .hider{
+         display: none;
+     }
+     .mobileonly{
+         display: block;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+     }
  }
