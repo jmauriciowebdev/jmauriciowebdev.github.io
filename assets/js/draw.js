@@ -17,11 +17,7 @@ var snake;
     fruit = new Fruit();
     fruit.pickLocation();
     fruit.draw();
-/*     if (localStorage.hs != 0) {
-        highscore.innerText = "Your Current High Score is: " + localStorage.hs;
-        snake.highscore = localStorage.hs;
-    }; */
-    // This area is commented out due to GitHub pages not supporting localStore
+    highscore.innerText = "Your Current High Score is: " + snake.highscore;
 
 
     
@@ -41,12 +37,11 @@ var snake;
         if (snake.total > snake.highscore) {
             snake.highscore++;
             highscore.innerText = "Your Current High Score is: " + snake.highscore;
-            // window.localStorage.setItem("hs", snake.highscore); GitHub pages does not support this feature
         }
         
         
         for (let i = 0; i <= canvas.width; i++){
-            ctx.fillStyle = "brown";
+            ctx.fillStyle = "DarkGoldenRod";
             ctx.fillRect(i, 0, scale, scale);
             ctx.fillRect(0, i, scale, scale);
             ctx.fillRect(i, canvas.height-10, scale, scale);

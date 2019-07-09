@@ -8,11 +8,17 @@ function Snake() {
     this.highscore = 0;
   
     this.draw = function() {
-      ctx.fillStyle = "green";
+      ctx.fillStyle = "Green";
       for (let i=0; i<this.tail.length; i++) {
+        if (i % 2 == 0){
+          ctx.fillStyle = "Chartreuse";
+        }
+        else {
+          ctx.fillStyle = "Green";
+        }
         ctx.fillRect(this.tail[i].x, this.tail[i].y, scale, scale);
       }
-  
+      ctx.fillStyle = "DarkGreen";
       ctx.fillRect(this.x, this.y, scale, scale);
     }
   

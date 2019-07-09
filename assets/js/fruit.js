@@ -1,6 +1,8 @@
 function Fruit() {
     this.x;
     this.y;
+    var im = new Image();
+    im.src = "assets/images/apple.svg";
 
     this.pickLocation = function () {
         this.x = (Math.floor(Math.random() * rows - 2) + 2) * scale;
@@ -14,7 +16,8 @@ function Fruit() {
     }
     
     this.draw = function () {
-        ctx.fillStyle = "red";
-        ctx.fillRect(this.x, this.y, scale, scale);
+        //ctx.fillStyle = "red";
+        //ctx.fillRect(this.x, this.y, scale, scale);
+        ctx.drawImage(im, this.x, this.y, scale, scale);
     }
 }
